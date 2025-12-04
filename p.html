@@ -123,9 +123,9 @@
 </footer>
 
 <script>
-// -----------------------------------------------------------
+
 // MATRIZES DO TRABALHO (BANCO DE QUESTÕES)
-// -----------------------------------------------------------
+
 
 const BANCO_DE_QUESTOES = {
     "Questão 6": [
@@ -159,9 +159,8 @@ const BANCO_DE_QUESTOES = {
 
 const TOLERANCIA = 1e-5;
 
-// -----------------------------------------------------------
 // FUNÇÕES DO ALGORITMO HITS
-// -----------------------------------------------------------
+
 
 function transposta(matriz) {
     return matriz[0].map((_, colIndex) => matriz.map(row => row[colIndex]));
@@ -224,9 +223,9 @@ function resolverRanking(nomeQuestao, matrizAdjacencia) {
     };
 }
 
-// -----------------------------------------------------------
+
 // ATUALIZA A INTERFACE
-// -----------------------------------------------------------
+
 
 function calcular() {
     const nome = document.getElementById("questao").value;
@@ -264,3 +263,4 @@ function calcular() {
 
 </body>
 </html>
+
